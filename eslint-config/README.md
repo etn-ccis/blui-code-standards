@@ -27,7 +27,7 @@ The PX Blue ruleset needs to be imported into ESLint.  Add the following `.eslin
 ```
 module.exports =  {
     parser:  '@typescript-eslint/parser',
-    extends:  [ 'pxblue' ],
+    extends:  [ '@pxblue/eslint-config' ],
     parserOptions:  {
         project: "./tsconfig.json",
     },
