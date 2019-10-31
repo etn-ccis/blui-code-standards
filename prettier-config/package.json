@@ -6,7 +6,7 @@
     "main": "index.js",
     "license": "BSD-3-Clause",
     "peerDependencies": {
-        "prettier": ">= 1.18.1"
+        "prettier": ">= 1.0.0"
     },
     "files": [
         "README.md",
