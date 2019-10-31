@@ -1,0 +1,22 @@
+{
+    "name": "@pxblue/prettier-config",
+    "version": "1.0.0",
+    "description": "Prettier config for PXBlue",
+    "author": "PX Blue <pxblue@eaton.com>",
+    "main": "index.js",
+    "license": "BSD-3-Clause",
+    "peerDependencies": {
+        "prettier": ">= 1.18.1"
+    },
+    "files": [
+        "README.md",
+        "LICENSE.md",
+        "index.js",
+        ".editorconfig",
+        "package.json"
+    ],
+    "keywords": [
+        "prettier",
+        "prettierconfig"
+    ]
+}

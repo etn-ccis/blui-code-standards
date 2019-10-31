@@ -1,10 +1,16 @@
 {
-    "name": "eslint-config-pxblue",
+    "name": "@pxblue/eslint-config",
     "version": "1.0.0",
     "description": "ESLint profile for PXBlue",
     "author": "PX Blue <pxblue@eaton.com>",
     "main": "index.js",
     "license": "BSD-3-Clause",
+    "files": [
+        "README.md",
+        "LICENSE.md",
+        "index.js",
+        "package.json"
+    ],
     "peerDependencies": {
         "eslint": ">= 6.5.1",
         "eslint-plugin-import": "^2.18.2",
