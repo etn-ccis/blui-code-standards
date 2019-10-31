@@ -8,7 +8,7 @@ The PX Blue ESLint profile is a combination of ESLint-Recommended and Typescript
 In order to use PX Blue's ESLint and Prettier configs, several dependencies need to be installed first.
 
 
-### ESLint Config
+### ESLint Setup
 From the root of your project, run:  
 
 `yarn add --save-dev eslint eslint-plugin-import eslint-config-prettier eslint-plugin-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser`
@@ -40,7 +40,7 @@ module.exports =  {
 ```
 To lint all typescript files in your project, run `yarn lint`.
 
-### Prettier Config
+### Prettier Setup
 From the root of your project, run:  
 
 `yarn add --save-dev prettier`
