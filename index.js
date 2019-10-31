@@ -15,6 +15,7 @@ module.exports =  {
         "@typescript-eslint/interface-name-prefix":         "off",
         "@typescript-eslint/no-array-constructor":          "off",
         "@typescript-eslint/no-extraneous-class":           ["error", { "allowConstructorOnly": true }],
+        "@typescript-eslint/no-explicit-any":               "error",
         "@typescript-eslint/no-require-imports":            "error",
         "@typescript-eslint/no-unnecessary-condition":      "error",
         "@typescript-eslint/no-unnecessary-qualifier":      "error",

@@ -2,7 +2,7 @@
 This package contains ESLint, Prettier, and EditorConfig profiles for use across all PX Blue applications.
 ESLint is used for enforcement of Code Quality, while Prettier and Editorconfig are used strictly for standardizing Code Style.
 
-PX Blue ESLint configuration is only compatible with projects using Typescript.
+The PX Blue ESLint profile is a combination of ESLint-Recommended and Typescript-ESLint best practices.   All code-style enforcing ESLint rules have been disabled so Prettier can work unhindered.  PX Blue ESLint configuration is only compatible with projects using Typescript.
 
 # Installation
 In order to use PX Blue's ESLint and Prettier configs, several dependencies need to be installed first.
