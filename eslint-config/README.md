@@ -1,29 +1,32 @@
-# PX Blue Linting
-This package contains PX Blue's custom ESLint configuration.
-ESLint is used for enforcement of Code Quality across all PX Blue applications.
-  All code-style enforcing ESLint rules have been disabled so Prettier can work unhindered.  PX Blue ESLint configuration is only compatible with projects using Typescript.
+# PX Blue ESLint Configuration
+![npm](https://img.shields.io/npm/v/@pxblue/eslint-config?label=%40pxblue%2Feslint-config)
 
-# Installation
-In order to use PX Blue's ESLint config, several dependencies need to be installed first.
+This package contains the PX Blue ESLint configuration. ESLint is used for enforcement of code quality across PX Blue applications. 
 
+> **NOTE:** The PX Blue ESLint configuration package is only compatible with TypeScript projects.
 
-### ESLint Setup
-From the root of your project, run:  
+All ESLint rules enforcing code style have been disabled in favor of using prettier for code formatting. Refer to [@pxblue/prettier-config](https://www.npmjs.com/package/@pxblue/prettier-config) for integrating prettier into your application.
 
-`yarn add --save-dev eslint eslint-plugin-import eslint-config-prettier eslint-plugin-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser`
+## Installation
+From the root of your package, install the PX Blue configuration:
+`yarn add --dev @pxblue/eslint-config`
 
+You will also need to install the following peer dependencies:
+`yarn add --dev eslint eslint-plugin-import eslint-config-prettier eslint-plugin-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser`
 
-Add the following script to your `package.json`.
+## Configuration
+### Add Linting Scripts
+Add the following scripts to your `package.json`.
 ```
 "scripts": {
-    ...
-    "lint": "eslint '**/**.ts' --fix",
-    ...
+    "lint": "eslint '**/**.ts'",
+    "lint:fix": "eslint '**/**.ts' --fix",
 }
 ```
-The `--fix` flag will automatically attempt to fix reported errors. To see the recommended edits before fixing them, remove the `--fix` tag.
+The `--fix` flag will automatically attempt to fix reported errors. Leaving this off will report errors/warnings without attempting to fix them.
 
-The PX Blue ruleset needs to be imported into ESLint.  Add the following `.eslintrc.js` to the root of your project.
+### Import the Linting configuration
+The PX Blue configuration needs to be imported into ESLint. Add the following `.eslintrc.js` to the root of your project.
 ```
 module.exports =  {
     parser:  '@typescript-eslint/parser',
@@ -35,7 +38,10 @@ module.exports =  {
         browser: true
     }
 };
-
 ```
+
+## Usage
 To lint all typescript files in your project, run `yarn lint`.
+
+To automatically fix linting errors in your project, run `yarn lint:fix` or `yarn lint --fix`.
 
