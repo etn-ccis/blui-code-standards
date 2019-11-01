@@ -16,7 +16,7 @@ module.exports =  {
         "@typescript-eslint/no-extraneous-class":           ["error", { "allowConstructorOnly": true }],
         "@typescript-eslint/no-explicit-any":               "error",
         "@typescript-eslint/no-require-imports":            "error",
-        "@typescript-eslint/no-unnecessary-condition":      "error",
+        "@typescript-eslint/no-unnecessary-condition":      "off",
         "@typescript-eslint/no-unnecessary-qualifier":      "error",
         "@typescript-eslint/no-unnecessary-type-arguments": "error",
         "@typescript-eslint/no-unused-vars":                "error",
