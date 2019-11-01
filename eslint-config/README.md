@@ -1,5 +1,5 @@
 # PX Blue ESLint Configuration
-![npm](https://img.shields.io/npm/v/@pxblue/eslint-config?label=%40pxblue%2Feslint-config)
+[![](https://img.shields.io/npm/v/@pxblue/eslint-config?label=%40pxblue%2Feslint-config&style=flat)](https://www.npmjs.com/package/@pxblue/eslint-config) 
 
 This package contains the PX Blue ESLint configuration. ESLint is used for enforcement of code quality across PX Blue applications. 
 
@@ -12,7 +12,7 @@ From the root of your package, install the PX Blue configuration:
 `yarn add --dev @pxblue/eslint-config`
 
 You will also need to install the following peer dependencies:
-`yarn add --dev eslint eslint-plugin-import eslint-config-prettier eslint-plugin-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser`
+`yarn add --dev eslint eslint-config-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser`
 
 ## Configuration
 ### Add Linting Scripts

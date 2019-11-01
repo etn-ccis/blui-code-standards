@@ -1,6 +1,6 @@
 # PX Blue Code Standards
-![npm](https://img.shields.io/npm/v/@pxblue/eslint-config?label=%40pxblue%2Feslint-config)
-![npm](https://img.shields.io/npm/v/@pxblue/prettier-config?label=%40pxblue%2Fprettier-config)
+[![](https://img.shields.io/npm/v/@pxblue/eslint-config?label=%40pxblue%2Feslint-config&style=flat)](https://www.npmjs.com/package/@pxblue/eslint-config) 
+[![](https://img.shields.io/npm/v/@pxblue/prettier-config?label=%40pxblue%2Fprettier-config&style=flat)](https://www.npmjs.com/package/@pxblue/prettier-config) 
 
 This repository contains resources for ensuring consistency and quality across different PX Blue applications and materials.
 
