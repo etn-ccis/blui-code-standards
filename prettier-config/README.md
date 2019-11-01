@@ -1,5 +1,5 @@
 # PX Blue Prettier Configuration
-![npm](https://img.shields.io/npm/v/@pxblue/prettier-config?label=%40pxblue%2Fprettier-config)
+[![](https://img.shields.io/npm/v/@pxblue/prettier-config?label=%40pxblue%2Fprettier-config&style=flat)](https://www.npmjs.com/package/@pxblue/prettier-config) 
 
 This package contains the PXBlue prettier and editorconfig profiles used to enforce consistent code style.
 

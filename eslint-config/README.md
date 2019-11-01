@@ -1,5 +1,5 @@
 # PX Blue ESLint Configuration
-![npm](https://img.shields.io/npm/v/@pxblue/eslint-config?label=%40pxblue%2Feslint-config)
+[![](https://img.shields.io/npm/v/@pxblue/eslint-config?label=%40pxblue%2Feslint-config&style=flat)](https://www.npmjs.com/package/@pxblue/eslint-config) 
 
 This package contains the PX Blue ESLint configuration. ESLint is used for enforcement of code quality across PX Blue applications. 
 
