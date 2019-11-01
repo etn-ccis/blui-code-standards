@@ -1,24 +1,28 @@
-# PX Blue Prettier Config
-This package contains PXBlue's Prettier and EditorConfig profiles to enforce consistent code style.
+# PX Blue Prettier Configuration
+![npm](https://img.shields.io/npm/v/@pxblue/prettier-config?label=%40pxblue%2Fprettier-config)
 
-# Installation
-Follow the steps below to install Prettier and integrate PX Blue's Prettier config.
+This package contains the PXBlue prettier and editorconfig profiles used to enforce consistent code style.
 
-### Prettier Setup
-From the root of your project, run:  
+## Installation
+From the root of your project, install prettier:  
 
-`yarn add --save-dev prettier`
+`yarn add --dev prettier`
 
+and the PX Blue prettier config:
 
+`yarn add --dev @pxblue/prettier-config`
+
+## Configuration
 Add the following script to your `package.json`.
 ```
 "prettier": "@pxblue/prettier-config",
 "scripts": {
-    ....
-    "prettier": "prettier '**/**.ts' --write",
-    ...    
+    "prettier": "prettier './**/**.{ts, tsx, js, jsx, json, css, scss}' --write",
 }
 ```
-
 The `--write` flag will automatically fix all code style violations. 
-To lint all typescript files in your project, run `yarn prettier`.
+
+> You can update the file extensions list to suit the particular files you would like to format.
+
+## Usage
+To format the files in your project, run `yarn prettier`.
