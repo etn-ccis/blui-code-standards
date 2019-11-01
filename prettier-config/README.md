@@ -17,7 +17,7 @@ Add the following script to your `package.json`.
 ```
 "prettier": "@pxblue/prettier-config",
 "scripts": {
-    "prettier": "prettier './**/**.{ts, tsx, js, jsx, json, css, scss}' --write",
+    "prettier": "prettier './**/**.{ts,tsx,js,jsx,json,css,scss,html}' --write",
 }
 ```
 The `--write` flag will automatically fix all code style violations. 
