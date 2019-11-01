@@ -70,11 +70,6 @@ module.exports =  {
         "prefer-const":                                     "error",
         "prefer-spread":                                    "error",
         "prefer-template":                                  "error",
-        "sort-imports": ["error", {
-            "ignoreCase": false,
-            "ignoreDeclarationSort": false,
-            "ignoreMemberSort": false,
-            "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
-        }]
+        "sort-imports":                                     "off"
     }
 };
