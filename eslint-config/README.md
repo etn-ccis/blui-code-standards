@@ -12,7 +12,7 @@ From the root of your package, install the PX Blue configuration:
 `yarn add --dev @pxblue/eslint-config`
 
 You will also need to install the following peer dependencies:
-`yarn add --dev eslint eslint-plugin-import eslint-config-prettier eslint-plugin-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser`
+`yarn add --dev eslint eslint-config-prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser`
 
 ## Configuration
 ### Add Linting Scripts
