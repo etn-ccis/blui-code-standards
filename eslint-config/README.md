@@ -19,8 +19,8 @@ You will also need to install the following peer dependencies:
 Add the following scripts to your `package.json`.
 ```
 "scripts": {
-    "lint": "eslint '**/**.ts'",
-    "lint:fix": "eslint '**/**.ts' --fix",
+    "lint": "eslint \"src/**/**.ts\"",
+    "lint:fix": "eslint \"src/**/**.ts\" --fix",
 }
 ```
 The `--fix` flag will automatically attempt to fix reported errors. Leaving this off will report errors/warnings without attempting to fix them.
