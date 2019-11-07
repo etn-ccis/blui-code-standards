@@ -18,7 +18,6 @@ const pxbRules = {
     '@typescript-eslint/restrict-plus-operands':        'error',
     '@typescript-eslint/unbound-method':                'off',
     'default-case':                                     'error',
-    'default-param-last':                               'error',
     'eqeqeq':                                           'error',
     'no-alert':                                         'error',
     'no-await-in-loop':                                 'error',
