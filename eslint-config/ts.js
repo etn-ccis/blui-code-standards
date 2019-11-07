@@ -1,8 +1,7 @@
-const reactProfile = {
+const tsProfile = {
     parser:  '@typescript-eslint/parser',  // Specifies the ESLint parser
     extends:  [
         'eslint:recommended',
-        'plugin:react/recommended',
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -11,4 +10,4 @@ const reactProfile = {
     rules: require('./pxb-rules')
 };
 
-module.exports = reactProfile;
+module.exports = tsProfile;
