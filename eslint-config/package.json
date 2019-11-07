@@ -1,6 +1,6 @@
 {
     "name": "@pxblue/eslint-config",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "ESLint profile for PXBlue",
     "author": "PX Blue <pxblue@eaton.com>",
     "main": "index.js",
@@ -9,16 +9,22 @@
         "README.md",
         "LICENSE.md",
         "index.js",
-        "package.json"
+        "package.json",
+        "ts.js",
+        "tsx.js",
+        "pxb-rules.js"
     ],
     "peerDependencies": {
-        "eslint": ">= 5.0.0",
         "@typescript-eslint/eslint-plugin": ">= 2.0.0",
+        "eslint": ">= 5.0.0",
         "typescript": ">= 3.4.0"
     },
     "dependencies": {
         "@typescript-eslint/parser": ">= 2.3.2",
         "eslint-config-prettier": ">= 6.3.0"
+    },
+    "optionalDependencies": {
+        "eslint-plugin-react": "^7.16.0"
     },
     "keywords": [
         "eslint",
