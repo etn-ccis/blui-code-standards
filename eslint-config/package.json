@@ -9,7 +9,10 @@
         "README.md",
         "LICENSE.md",
         "index.js",
-        "package.json"
+        "package.json",
+        "ts.js",
+        "tsx.js",
+        "pxb-rules.js"
     ],
     "peerDependencies": {
         "@typescript-eslint/eslint-plugin": ">= 2.0.0",
