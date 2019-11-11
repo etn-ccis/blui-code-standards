@@ -25,8 +25,8 @@ If your project is using React with the TSX file extension, you also need to ins
 Add the following scripts to your `package.json`.
 ```
 "scripts": {
-    "lint": "eslint '**/**.ts'",
-    "lint:fix": "eslint '**/**.ts' --fix",
+    "lint": "eslint \"src/**/**.ts\"",
+    "lint:fix": "eslint \"src/**/**.ts\" --fix",
 }
 ```
 
