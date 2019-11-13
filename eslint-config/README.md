@@ -50,7 +50,7 @@ module.exports =  {
 };
 ```
 
-> **TSX Projects:** Extend from `@pxblue/estlint-config/tsx`.
+> **TSX Projects:** Extend from `@pxblue/eslint-config/tsx`.
 
 ## Usage
 To lint all typescript files in your project, run `yarn lint`.
