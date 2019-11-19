@@ -1,6 +1,6 @@
 {
     "name": "@pxblue/eslint-config",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "ESLint profile for PXBlue",
     "author": "PX Blue <pxblue@eaton.com>",
     "main": "index.js",
