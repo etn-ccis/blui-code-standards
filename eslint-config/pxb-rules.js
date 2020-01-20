@@ -60,7 +60,7 @@ const pxbRules = {
     'prefer-const':                                     'error',
     'prefer-spread':                                    'error',
     'prefer-template':                                  'error',
-    'sort-imports':                                     'off'
+    'sort-imports':                                     'off',
 };
 
 module.exports = pxbRules;
