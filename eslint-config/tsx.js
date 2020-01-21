@@ -11,9 +11,14 @@ const tsxProfile = {
     settings: {
         react: {
             version: 'detect'
+
         }
     },
-    rules: require('./pxb-rules')
+    rules: Object.assign(
+        {
+            'react/prop-types': 'off',
+        },
+        require('./pxb-rules'))
 };
 
 module.exports = tsxProfile;
