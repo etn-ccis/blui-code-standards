@@ -1,6 +1,6 @@
 {
     "name": "@pxblue/prettier-config",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Prettier config for PXBlue",
     "author": "PX Blue <pxblue@eaton.com>",
     "main": "index.js",
