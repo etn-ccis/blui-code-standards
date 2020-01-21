@@ -4,7 +4,7 @@ const pxbRules = {
     '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/interface-name-prefix':         'off',
     '@typescript-eslint/no-array-constructor':          'off',
-    '@typescript-eslint/no-explicit-any':               'error',
+    '@typescript-eslint/no-explicit-any':               'off',
     '@typescript-eslint/no-require-imports':            'error',
     '@typescript-eslint/no-unnecessary-condition':      'off',
     '@typescript-eslint/no-unnecessary-qualifier':      'error',
