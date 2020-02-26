@@ -5,7 +5,7 @@ const pxbRules = {
     '@typescript-eslint/interface-name-prefix':         'off',
     '@typescript-eslint/no-array-constructor':          'off',
     '@typescript-eslint/no-explicit-any':               'off',
-    '@typescript-eslint/no-require-imports':            'error',
+    '@typescript-eslint/no-require-imports':            'off',
     '@typescript-eslint/no-unnecessary-condition':      'off',
     '@typescript-eslint/no-unnecessary-qualifier':      'error',
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
