@@ -21,7 +21,7 @@ const pxbRules = {
     'eqeqeq':                                           'error',
     'no-alert':                                         'error',
     'no-await-in-loop':                                 'error',
-    'no-empty-function':                                ['error', { 'allow': ['constructors'] }],
+    'no-empty-function':                                'off',
     'no-empty-constructor':                             'off',
     'no-console':                                       ['error', { allow: ['error'] }],
     'no-import-assign':                                 'error',
