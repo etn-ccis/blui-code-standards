@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:12.6-browsers
+    steps:
+      - checkout
+      - run:
+          name: Verify Artifacts
+          command: cd eslint-config && yarn test && cd ../prettier-config && yarn test
