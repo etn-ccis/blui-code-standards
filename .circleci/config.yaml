@@ -8,3 +8,9 @@ jobs:
       - run:
           name: Verify Artifacts
           command: cd eslint-config && yarn test && cd ../prettier-config && yarn test
+
+workflows:
+  version: 2
+  react_library:
+    jobs:
+      - build
