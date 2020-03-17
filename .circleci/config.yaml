@@ -11,6 +11,6 @@ jobs:
 
 workflows:
   version: 2
-  react_library:
+  code_standards:
     jobs:
       - build
