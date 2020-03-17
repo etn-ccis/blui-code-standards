@@ -11,7 +11,7 @@ if [ ! -f ./README.md ]; then echo -e "${RED}Not Found${NC}" && exit 1; else ech
 echo -ne "  package.json: "
 if [ ! -f ./package.json ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 echo -ne "  license: "
-if [ ! -f ./license.md ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
+if [ ! -f ./LICENSE.md ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 echo -ne "  index: "
 if [ ! -f ./index.js ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 echo -ne "  ts: "
