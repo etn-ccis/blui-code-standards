@@ -8,6 +8,9 @@
     "peerDependencies": {
         "prettier": ">= 1.0.0"
     },
+    "scripts": {
+        "test": "bash ./verifyArtifacts.sh"
+    },
     "files": [
         "README.md",
         "LICENSE.md",
