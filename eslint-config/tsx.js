@@ -16,7 +16,8 @@ const tsxProfile = {
     },
     rules: Object.assign(
         {
-            'react/prop-types': 'off',
+            'react/prop-types':     'off',
+            'react/display-name':   'off'
         },
         require('./pxb-rules'))
 };
