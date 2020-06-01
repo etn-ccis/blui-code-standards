@@ -2,7 +2,7 @@ const pxbRules = {
     '@typescript-eslint/array-type':                    ['error', {default: 'array-simple'}],
     '@typescript-eslint/consistent-type-definitions':   ['error', 'type'],
     '@typescript-eslint/explicit-function-return-type': 'error',
-    '@typescript-eslint/naming-convention':             ['error', { format: ['camelCase','UPPER_CASE']}],
+    '@typescript-eslint/naming-convention':             ['error', { selector: 'default', format: ['camelCase','UPPER_CASE']}],
     '@typescript-eslint/no-array-constructor':          'off',
     '@typescript-eslint/no-explicit-any':               'off',
     '@typescript-eslint/no-require-imports':            'off',
