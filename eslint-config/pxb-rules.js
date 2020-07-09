@@ -34,7 +34,7 @@ const pxbRules = {
             "format": ["PascalCase"]
         }
     ],
-    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/no-array-constructor': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
