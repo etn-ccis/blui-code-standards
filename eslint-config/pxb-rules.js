@@ -56,6 +56,7 @@ const pxbRules = {
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/restrict-template-expressions': ['error', { allowAny: true }],
     'default-case': 'error',
     'eqeqeq': 'error',
     'no-alert': 'error',
