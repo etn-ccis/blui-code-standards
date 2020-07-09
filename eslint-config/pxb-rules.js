@@ -6,8 +6,7 @@ const pxbRules = {
         "error",
         {
             "selector": "default",
-            "format": ["camelCase"],
-            "leadingUnderscore": "allow"
+            "format": ["camelCase"]
         },
         {
             "selector": "variable",
