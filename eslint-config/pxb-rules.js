@@ -35,7 +35,7 @@ const pxbRules = {
         }
     ],
     '@typescript-eslint/no-floating-promises': 'error',
-    '@typescript-eslint/explicit-module-boundary-types': 'error',
+    '@typescript-eslint/explicit-module-boundary-types': ['error', { allowArgumentsExplicitlyTypedAsAny: true }],
     '@typescript-eslint/no-array-constructor': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-require-imports': 'off',
@@ -56,6 +56,7 @@ const pxbRules = {
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/restrict-template-expressions': ['error', { allowAny: true }],
     'default-case': 'error',
     'eqeqeq': 'error',
     'no-alert': 'error',
