@@ -1,6 +1,6 @@
 # Changelog
 
-## v2.0.1
+## v2.0.2
 ### Changed
 - Updated '@typescript-eslint/naming-convention' rule to allow UPPER_CASE format for enums
 
