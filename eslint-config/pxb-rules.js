@@ -17,11 +17,14 @@ const pxbRules = {
             "format": ["camelCase", "UPPER_CASE", "PascalCase"]
         },
         {
+            "selector": "enumMember",
+            "format": ["UPPER_CASE"]
+        },
+        {
             "selector": "parameter",
             "format": ["camelCase"],
             "leadingUnderscore": "allow"
         },
-
         {
             "selector": "memberLike",
             "modifiers": ["private"],
