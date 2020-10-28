@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.0.3
+### Changed
+- Updated to use '@typescript-eslint/no-use-before-define' rule instead of eslint's default `no-use-before-define`
+
+
 ## v2.0.2
 ### Changed
 - Updated '@typescript-eslint/naming-convention' rule to allow UPPER_CASE format for enums
