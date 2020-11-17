@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.0.4 (Not published)
+### Changed
+- Updated peer dependencies to the latest versions of eslint-plugin and parser
+
 ## v2.0.3
 ### Changed
 - Updated to use '@typescript-eslint/no-use-before-define' rule instead of eslint's default `no-use-before-define`
