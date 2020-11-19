@@ -1,6 +1,6 @@
 # Changelog
 
-## v2.0.4 (Not published)
+## v2.0.4
 ### Changed
 - Updated peer dependencies to the latest versions of eslint-plugin and parser
 
