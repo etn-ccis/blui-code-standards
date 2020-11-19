@@ -1,6 +1,6 @@
 {
     "name": "@pxblue/eslint-config",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "description": "ESLint profile for PXBlue",
     "author": "PX Blue <pxblue@eaton.com>",
     "main": "index.js",
@@ -19,12 +19,12 @@
         "test": "bash ./verifyArtifacts.sh"
     },
     "peerDependencies": {
-        "@typescript-eslint/eslint-plugin": "^3.0.0",
+        "@typescript-eslint/eslint-plugin": "^4.8.0",
         "eslint": ">= 5.0.0",
         "typescript": ">= 3.4.0"
     },
     "dependencies": {
-        "@typescript-eslint/parser": "^3.0.0",
+        "@typescript-eslint/parser": "^4.8.0",
         "eslint-config-prettier": ">= 6.3.0"
     },
     "optionalDependencies": {
