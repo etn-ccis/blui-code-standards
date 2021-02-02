@@ -2,15 +2,55 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:12.6-browsers
+      - image: circleci/node:12.9.1-browsers
     steps:
       - checkout
       - run:
           name: Verify Artifacts
           command: cd eslint-config && yarn test && cd ../prettier-config && yarn test
 
+  publish:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+    steps:
+      - checkout
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+      - run:
+          name: Publish @pxblue/prettier-config
+          command:  |
+            cd prettier-config
+            MASTER_VERSION=`node -p "require('./package.json').version"`
+            NPM_LATEST_VERSION=`npm show @pxblue/prettier-config version`
+            if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
+            then
+                npm publish
+            else
+                echo "Latest version is already published."
+            fi
+      - run:
+          name: Publish @pxblue/eslint-config
+          command:  |
+            cd eslint-config
+            MASTER_VERSION=`node -p "require('./package.json').version"`
+            NPM_LATEST_VERSION=`npm show @pxblue/eslint-config version`
+            if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
+            then
+            npm publish
+            else
+            echo "Latest version is already published."
+            fi
+
 workflows:
   version: 2
   code_standards:
     jobs:
       - build
+      - publish:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
