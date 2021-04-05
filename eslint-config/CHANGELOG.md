@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.0.5
+### Added
+- Added github information to the package.json
+
 ## v2.0.4
 ### Changed
 - Updated peer dependencies to the latest versions of eslint-plugin and parser.

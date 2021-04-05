@@ -1,10 +1,18 @@
 {
     "name": "@pxblue/prettier-config",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Prettier config for PXBlue",
     "author": "PX Blue <pxblue@eaton.com>",
     "main": "index.js",
     "license": "BSD-3-Clause",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pxblue/code-standards.git"
+    },
+    "bugs": {
+        "url": "https://github.com/pxblue/code-standards/issues"
+    },
+    "homepage": "https://github.com/pxblue/code-standards/tree/master/prettier-config#readme",
     "peerDependencies": {
         "prettier": ">= 1.0.0"
     },
