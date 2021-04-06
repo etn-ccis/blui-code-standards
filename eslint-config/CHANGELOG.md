@@ -1,6 +1,6 @@
 # Changelog
 
-## v2.0.5
+## v2.0.5 (not published yet)
 ### Added
 - Added github information to the package.json
 
