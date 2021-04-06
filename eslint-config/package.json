@@ -1,10 +1,18 @@
 {
     "name": "@pxblue/eslint-config",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "description": "ESLint profile for PXBlue",
     "author": "PX Blue <pxblue@eaton.com>",
     "main": "index.js",
     "license": "BSD-3-Clause",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pxblue/code-standards.git"
+    },
+    "bugs": {
+        "url": "https://github.com/pxblue/code-standards/issues"
+    },
+    "homepage": "https://github.com/pxblue/code-standards/tree/master/eslint-config#readme",
     "files": [
         "README.md",
         "LICENSE.md",
