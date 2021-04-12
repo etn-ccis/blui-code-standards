@@ -24,6 +24,7 @@
         "pxb-rules.js"
     ],
     "scripts": {
+        "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
         "test": "bash ./verifyArtifacts.sh"
     },
     "peerDependencies": {
@@ -44,5 +45,10 @@
         "pxblue",
         "quality",
         "standards"
-    ]
+    ],
+    "prettier": "@pxblue/prettier-config",
+    "devDependencies": {
+        "@pxblue/prettier-config": "^1.0.2",
+        "prettier": "^2.2.1"
+    }
 }

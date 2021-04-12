@@ -2,40 +2,40 @@ const pxbRules = {
     '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/explicit-function-return-type': 'error',
-    "@typescript-eslint/naming-convention": [
-        "error",
+    '@typescript-eslint/naming-convention': [
+        'error',
         {
-            "selector": "default",
-            "format": ["camelCase"]
+            selector: 'default',
+            format: ['camelCase'],
         },
         {
-            "selector": "variable",
-            "format": ["camelCase", "UPPER_CASE", "PascalCase"]
+            selector: 'variable',
+            format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
         },
         {
-            "selector": "property",
-            "format": ["camelCase", "UPPER_CASE", "PascalCase"]
+            selector: 'property',
+            format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
         },
         {
-            "selector": "enumMember",
-            "format": ["UPPER_CASE"]
+            selector: 'enumMember',
+            format: ['UPPER_CASE'],
         },
         {
-            "selector": "parameter",
-            "format": ["camelCase"],
-            "leadingUnderscore": "allow"
+            selector: 'parameter',
+            format: ['camelCase'],
+            leadingUnderscore: 'allow',
         },
         {
-            "selector": "memberLike",
-            "modifiers": ["private"],
-            "format": ["camelCase"],
-            "leadingUnderscore": "require"
+            selector: 'memberLike',
+            modifiers: ['private'],
+            format: ['camelCase'],
+            leadingUnderscore: 'require',
         },
 
         {
-            "selector": "typeLike",
-            "format": ["PascalCase"]
-        }
+            selector: 'typeLike',
+            format: ['PascalCase'],
+        },
     ],
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/explicit-module-boundary-types': ['error', { allowArgumentsExplicitlyTypedAsAny: true }],
@@ -61,7 +61,7 @@ const pxbRules = {
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/restrict-template-expressions': ['error', { allowAny: true }],
     'default-case': 'error',
-    'eqeqeq': 'error',
+    eqeqeq: 'error',
     'no-alert': 'error',
     'no-await-in-loop': 'error',
     'no-empty-function': 'off',
@@ -91,10 +91,10 @@ const pxbRules = {
     'no-undef-init': 'error',
     'no-undefined': 'off',
     'no-use-before-define': 'off',
-    "@typescript-eslint/no-use-before-define": 'error',
+    '@typescript-eslint/no-use-before-define': 'error',
     'prefer-regex-literals': 'error',
     'require-await': 'error',
-    'yoda': 'error',
+    yoda: 'error',
     'arrow-body-style': ['error', 'as-needed'],
     'arrow-parens': ['error', 'always'],
     'no-duplicate-imports': 'error',
