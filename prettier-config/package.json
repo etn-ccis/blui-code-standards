@@ -17,7 +17,8 @@
         "prettier": ">= 1.0.0"
     },
     "scripts": {
-        "test": "bash ./verifyArtifacts.sh"
+        "test": "bash ./verifyArtifacts.sh",
+        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish"
     },
     "files": [
         "README.md",

@@ -24,7 +24,8 @@
         "pxb-rules.js"
     ],
     "scripts": {
-        "test": "bash ./verifyArtifacts.sh"
+        "test": "bash ./verifyArtifacts.sh",
+        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish"
     },
     "peerDependencies": {
         "@typescript-eslint/eslint-plugin": "^4.8.0",
