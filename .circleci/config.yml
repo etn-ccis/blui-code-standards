@@ -16,31 +16,15 @@ jobs:
       - checkout
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+          command:  |
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+            echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
           name: Publish @pxblue/prettier-config
-          command:  |
-            cd prettier-config
-            MASTER_VERSION=`node -p "require('./package.json').version"`
-            NPM_LATEST_VERSION=`npm show @pxblue/prettier-config version`
-            if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
-            then
-                npm publish
-            else
-                echo "Latest version is already published."
-            fi
+          command: cd prettier-config && yarn publish:package
       - run:
           name: Publish @pxblue/eslint-config
-          command:  |
-            cd eslint-config
-            MASTER_VERSION=`node -p "require('./package.json').version"`
-            NPM_LATEST_VERSION=`npm show @pxblue/eslint-config version`
-            if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
-            then
-            npm publish
-            else
-            echo "Latest version is already published."
-            fi
+          command: cd eslint-config && yarn publish:package
 
 workflows:
   version: 2
@@ -54,3 +38,4 @@ workflows:
             branches:
               only:
                 - master
+                - dev
