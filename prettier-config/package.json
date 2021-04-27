@@ -19,6 +19,7 @@
     "scripts": {
         "test": "bash ./verifyArtifacts.sh",
         "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish"
+        "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write"
     },
     "files": [
         "README.md",
@@ -32,5 +33,10 @@
         "prettierconfig",
         "pxblue",
         "formatting"
-    ]
+    ],
+    "prettier": "@pxblue/prettier-config",
+    "devDependencies": {
+        "@pxblue/prettier-config": "^1.0.2",
+        "prettier": "^2.2.1"
+    }
 }
