@@ -21,10 +21,10 @@ jobs:
             echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
           name: Publish @pxblue/prettier-config
-          command: cd prettier-config && yarn publish:package
+          command: cd prettier-config && yarn publish:package -b $CIRCLE_BRANCH
       - run:
           name: Publish @pxblue/eslint-config
-          command: cd eslint-config && yarn publish:package
+          command: cd eslint-config && yarn publish:package -b $CIRCLE_BRANCH
 
 workflows:
   version: 2
