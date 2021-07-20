@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+  gh: circleci/github-cli@1.0.3
 jobs:
   build:
     docker:
@@ -25,6 +27,18 @@ jobs:
       - run:
           name: Publish @pxblue/eslint-config
           command: cd eslint-config && yarn publish:package -b $CIRCLE_BRANCH
+  tag:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+    steps:
+      - checkout
+      - gh/setup
+      - run:
+          name: Tag @pxblue/prettier-config
+          command: cd prettier-config && yarn tag:package -b $CIRCLE_BRANCH -s -prettier-config
+      - run:
+          name: Tag @pxblue/eslint-config
+          command: cd eslint-config && yarn tag:package -b $CIRCLE_BRANCH -s -eslint-config
 
 workflows:
   version: 2
@@ -39,3 +53,10 @@ workflows:
               only:
                 - master
                 - dev
+      - tag:
+          requires:
+            - publish
+          filters:
+            branches:
+              only:
+                - master
