@@ -25,6 +25,7 @@
     ],
     "scripts": {
         "test": "bash ./verifyArtifacts.sh",
+        "tag:package": "npx -p @pxblue/tag pxb-tag",
         "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write"
     },
