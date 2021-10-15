@@ -18,5 +18,5 @@ echo -ne "  ts: "
 if [ ! -f ./ts.js ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 echo -ne "  tsx: "
 if [ ! -f ./tsx.js ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
-echo -ne "  pxb-rules: "
-if [ ! -f ./pxb-rules.js ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
+echo -ne "  blui-rules: "
+if [ ! -f ./blui-rules.js ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
