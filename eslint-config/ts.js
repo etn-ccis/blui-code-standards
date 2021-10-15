@@ -6,7 +6,7 @@ const tsProfile = {
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
         'eslint-config-prettier',
     ],
-    rules: require('./pxb-rules'),
+    rules: require('./blui-rules'),
 };
 
 module.exports = tsProfile;

@@ -1,4 +1,4 @@
-const pxbRules = {
+const bluiRules = {
     '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/explicit-function-return-type': 'error',
@@ -107,4 +107,4 @@ const pxbRules = {
     'sort-imports': 'off',
 };
 
-module.exports = pxbRules;
+module.exports = bluiRules;

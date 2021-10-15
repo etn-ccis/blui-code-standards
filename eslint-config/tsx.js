@@ -18,7 +18,7 @@ const tsxProfile = {
             'react/prop-types': 'off',
             'react/display-name': 'off',
         },
-        require('./pxb-rules')
+        require('./blui-rules')
     ),
 };
 

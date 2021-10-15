@@ -22,10 +22,10 @@ jobs:
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
             echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
-          name: Publish @pxblue/prettier-config
+          name: Publish @brightlayer-ui/prettier-config
           command: cd prettier-config && yarn publish:package -b $CIRCLE_BRANCH
       - run:
-          name: Publish @pxblue/eslint-config
+          name: Publish @brightlayer-ui/eslint-config
           command: cd eslint-config && yarn publish:package -b $CIRCLE_BRANCH
   tag:
     docker:
@@ -34,10 +34,10 @@ jobs:
       - checkout
       - gh/setup
       - run:
-          name: Tag @pxblue/prettier-config
+          name: Tag @brightlayer-ui/prettier-config
           command: cd prettier-config && yarn tag:package -b $CIRCLE_BRANCH -s -prettier-config
       - run:
-          name: Tag @pxblue/eslint-config
+          name: Tag @brightlayer-ui/eslint-config
           command: cd eslint-config && yarn tag:package -b $CIRCLE_BRANCH -s -eslint-config
 
 workflows:

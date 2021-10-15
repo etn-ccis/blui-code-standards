@@ -1,25 +1,25 @@
 {
-    "name": "@pxblue/prettier-config",
+    "name": "@brightlayer-ui/prettier-config",
     "version": "1.0.3",
-    "description": "Prettier config for PXBlue",
-    "author": "PX Blue <pxblue@eaton.com>",
+    "description": "Prettier config for Brightlayer UI",
+    "author": "Brightlayer UI <brightlayer-ui@eaton.com>",
     "main": "index.js",
     "license": "BSD-3-Clause",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pxblue/code-standards.git"
+        "url": "git+https://github.com/brightlayer-ui/code-standards.git"
     },
     "bugs": {
-        "url": "https://github.com/pxblue/code-standards/issues"
+        "url": "https://github.com/brightlayer-ui/code-standards/issues"
     },
-    "homepage": "https://github.com/pxblue/code-standards/tree/master/prettier-config#readme",
+    "homepage": "https://github.com/brightlayer-ui/code-standards/tree/master/prettier-config#readme",
     "peerDependencies": {
         "prettier": ">= 1.0.0"
     },
     "scripts": {
         "test": "bash ./verifyArtifacts.sh",
-        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
-        "tag:package": "npx -p @pxblue/tag pxb-tag",
+        "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
+        "tag:package": "npx -p @brightlayer-ui/tag blui-tag",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write"
     },
     "files": [
@@ -32,12 +32,12 @@
     "keywords": [
         "prettier",
         "prettierconfig",
-        "pxblue",
+        "brightlayer-ui",
         "formatting"
     ],
-    "prettier": "@pxblue/prettier-config",
+    "prettier": "@brightlayer-ui/prettier-config",
     "devDependencies": {
-        "@pxblue/prettier-config": "^1.0.2",
+        "@brightlayer-ui/prettier-config": "latest",
         "prettier": "^2.2.1"
     }
 }
