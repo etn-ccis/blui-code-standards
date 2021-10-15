@@ -1,16 +1,16 @@
-# PX Blue ESLint Configuration
+# Brightlayer UI ESLint Configuration
 
 [![](https://img.shields.io/npm/v/@brightlayer-ui/eslint-config?label=%40brightlayer-ui%2Feslint-config&style=flat)](https://www.npmjs.com/package/@brightlayer-ui/eslint-config)
 
-This package contains PX Blue ESLint configurations for Typescript and TSX projects. ESLint is used for enforcement of code quality across PX Blue applications.
+This package contains Brightlayer UI ESLint configurations for Typescript and TSX projects. ESLint is used for enforcement of code quality across Brightlayer UI applications.
 
-> **NOTE:** The PX Blue ESLint configuration package is only compatible with TypeScript projects.
+> **NOTE:** The Brightlayer UI ESLint configuration package is only compatible with TypeScript projects.
 
 All ESLint rules enforcing code style have been disabled in favor of using prettier for code formatting. Refer to [@brightlayer-ui/prettier-config](https://www.npmjs.com/package/@brightlayer-ui/prettier-config) for integrating prettier into your application.
 
 ## Installation
 
-From the root of your package, install the PX Blue configuration:
+From the root of your package, install the Brightlayer UI configuration:
 
 `yarn add --dev @brightlayer-ui/eslint-config`
 
@@ -41,7 +41,7 @@ The `--fix` flag will automatically attempt to fix reported errors. Leaving this
 
 ### Import the Linting configuration
 
-The PX Blue configuration needs to be imported into ESLint. Add the following `.eslintrc.js` to the root of your project.
+The Brightlayer UI configuration needs to be imported into ESLint. Add the following `.eslintrc.js` to the root of your project.
 
 ```
 module.exports =  {
