@@ -1,18 +1,18 @@
 {
-    "name": "@pxblue/eslint-config",
-    "version": "2.0.5",
-    "description": "ESLint profile for PXBlue",
-    "author": "PX Blue <pxblue@eaton.com>",
+    "name": "@brightlayer-ui/eslint-config",
+    "version": "2.0.5-beta.0",
+    "description": "ESLint profile for Brightlayer UI",
+    "author": "Brightlayer UI <brightlayer-ui@eaton.com>",
     "main": "index.js",
     "license": "BSD-3-Clause",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pxblue/code-standards.git"
+        "url": "git+https://github.com/brightlayer-ui/code-standards.git"
     },
     "bugs": {
-        "url": "https://github.com/pxblue/code-standards/issues"
+        "url": "https://github.com/brightlayer-ui/code-standards/issues"
     },
-    "homepage": "https://github.com/pxblue/code-standards/tree/master/eslint-config#readme",
+    "homepage": "https://github.com/brightlayer-ui/code-standards/tree/master/eslint-config#readme",
     "files": [
         "README.md",
         "LICENSE.md",
@@ -21,12 +21,12 @@
         "package.json",
         "ts.js",
         "tsx.js",
-        "pxb-rules.js"
+        "blui-rules.js"
     ],
     "scripts": {
         "test": "bash ./verifyArtifacts.sh",
-        "tag:package": "npx -p @pxblue/tag pxb-tag",
-        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
+        "tag:package": "npx -p @brightlayer-ui/tag blui-tag",
+        "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write"
     },
     "peerDependencies": {
@@ -44,13 +44,13 @@
     "keywords": [
         "eslint",
         "eslintconfig",
-        "pxblue",
+        "brightlayer-ui",
         "quality",
         "standards"
     ],
-    "prettier": "@pxblue/prettier-config",
+    "prettier": "@brightlayer-ui/prettier-config",
     "devDependencies": {
-        "@pxblue/prettier-config": "^1.0.2",
+        "@brightlayer-ui/prettier-config": "latest",
         "prettier": "^2.2.1"
     }
 }

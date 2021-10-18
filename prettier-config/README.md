@@ -1,21 +1,21 @@
-# PX Blue Prettier Configuration
-[![](https://img.shields.io/npm/v/@pxblue/prettier-config?label=%40pxblue%2Fprettier-config&style=flat)](https://www.npmjs.com/package/@pxblue/prettier-config) 
+# Brightlayer UI Prettier Configuration
+[![](https://img.shields.io/npm/v/@brightlayer-ui/prettier-config?label=%40brightlayer-ui%2Fprettier-config&style=flat)](https://www.npmjs.com/package/@brightlayer-ui/prettier-config) 
 
-This package contains the PXBlue prettier and editorconfig profiles used to enforce consistent code style.
+This package contains the Brightlayer UI prettier and editorconfig profiles used to enforce consistent code style.
 
 ## Installation
 From the root of your project, install prettier:  
 
 `yarn add --dev prettier`
 
-and the PX Blue prettier config:
+and the Brightlayer UI prettier config:
 
-`yarn add --dev @pxblue/prettier-config`
+`yarn add --dev @brightlayer-ui/prettier-config`
 
 ## Configuration
 Add the following script to your `package.json`.
 ```
-"prettier": "@pxblue/prettier-config",
+"prettier": "@brightlayer-ui/prettier-config",
 "scripts": {
     "prettier": "prettier \"src/**/**.{ts,tsx,js,jsx,json,css,scss,html}\" --write",
 }
