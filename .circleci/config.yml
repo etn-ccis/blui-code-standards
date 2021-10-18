@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+  gh: circleci/github-cli@1.0.3
 jobs:
   build:
     docker:
@@ -16,31 +18,27 @@ jobs:
       - checkout
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-      - run:
-          name: Publish @pxblue/prettier-config
           command:  |
-            cd prettier-config
-            MASTER_VERSION=`node -p "require('./package.json').version"`
-            NPM_LATEST_VERSION=`npm show @pxblue/prettier-config version`
-            if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
-            then
-                npm publish
-            else
-                echo "Latest version is already published."
-            fi
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+            echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
-          name: Publish @pxblue/eslint-config
-          command:  |
-            cd eslint-config
-            MASTER_VERSION=`node -p "require('./package.json').version"`
-            NPM_LATEST_VERSION=`npm show @pxblue/eslint-config version`
-            if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
-            then
-            npm publish
-            else
-            echo "Latest version is already published."
-            fi
+          name: Publish @brightlayer-ui/prettier-config
+          command: cd prettier-config && yarn publish:package -b $CIRCLE_BRANCH
+      - run:
+          name: Publish @brightlayer-ui/eslint-config
+          command: cd eslint-config && yarn publish:package -b $CIRCLE_BRANCH
+  tag:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+    steps:
+      - checkout
+      - gh/setup
+      - run:
+          name: Tag @brightlayer-ui/prettier-config
+          command: cd prettier-config && yarn tag:package -b $CIRCLE_BRANCH -s -prettier-config
+      - run:
+          name: Tag @brightlayer-ui/eslint-config
+          command: cd eslint-config && yarn tag:package -b $CIRCLE_BRANCH -s -eslint-config
 
 workflows:
   version: 2
@@ -50,6 +48,14 @@ workflows:
       - publish:
           requires:
             - build
+          filters:
+            branches:
+              only:
+                - master
+                - dev
+      - tag:
+          requires:
+            - publish
           filters:
             branches:
               only:
