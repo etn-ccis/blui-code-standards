@@ -1,5 +1,12 @@
 # Changelog
 
+## v3.0.0 (Not yet published)
+
+### Changed
+
+-   Updated all dependencies to latest available versions. (`eslint@8.6.0` `@typescript-eslint/eslint-plugin@5.9.0`, `eslint-plugin-react@7.28.0`) ([#50](https://github.com/brightlayer-ui/code-standards/issues/50)).
+-   Removed duplicated `no-shadow` rule and only use the `@typescript-eslint/no-shadow` rule. ([#33](https://github.com/brightlayer-ui/code-standards/issues/33)).
+
 ## v2.0.5 (October 19, 2021)
 
 ### Changed
