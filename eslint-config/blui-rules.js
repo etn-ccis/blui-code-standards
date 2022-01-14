@@ -48,6 +48,7 @@ const bluiRules = {
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     '@typescript-eslint/no-unsafe-assignment': 'off',
+    '@typescript-eslint/no-unsafe-argument': 'off',
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
@@ -84,7 +85,6 @@ const bluiRules = {
     'no-return-assign': 'error',
     'no-self-compare': 'error',
     'no-sequences': 'error',
-    'no-shadow': 'error',
     'no-throw-literal': 'error',
     'no-unused-expressions': 'error',
     'no-useless-call': 'error',
@@ -105,6 +105,8 @@ const bluiRules = {
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'sort-imports': 'off',
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"]
 };
 
 module.exports = bluiRules;
