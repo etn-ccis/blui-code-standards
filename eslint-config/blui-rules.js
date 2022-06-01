@@ -17,6 +17,11 @@ const bluiRules = {
             format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
         },
         {
+            selector: 'property',
+            format: null,
+            modifiers: ['requiresQuotes']
+        },
+        {
             selector: 'enumMember',
             format: ['UPPER_CASE'],
         },
