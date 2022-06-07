@@ -1,10 +1,10 @@
 # Changelog
 
-## v3.0.1 (Not yet published)
+## v3.0.1 (June 8, 2022)
 
 ### Changed
 
-- Eased `@typescript-eslint/naming-convention` rules to allow quoted properties ([#55](https://github.com/brightlayer-ui/code-standards/issues/55)).
+-   Eased `@typescript-eslint/naming-convention` rules to allow quoted properties ([#55](https://github.com/brightlayer-ui/code-standards/issues/55)).
 
 ## v3.0.0 (January 14, 2022)
 
