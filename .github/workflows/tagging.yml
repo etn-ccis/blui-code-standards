@@ -1,0 +1,23 @@
+name: Tagging
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  CURRENT_BRANCH: ${{ github.ref_name }}
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  tag-prettier-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd prettier-config && yarn tag:package -b ${CURRENT_BRANCH} -s -prettier-config
+  tag-lint-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd eslint-config && yarn tag:package -b ${CURRENT_BRANCH} -s -eslint-config
+      
