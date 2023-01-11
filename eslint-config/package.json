@@ -7,12 +7,12 @@
     "license": "BSD-3-Clause",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/brightlayer-ui/code-standards.git"
+        "url": "git+https://github.com/etn-ccis/blui-code-standards.git"
     },
     "bugs": {
-        "url": "https://github.com/brightlayer-ui/code-standards/issues"
+        "url": "https://github.com/etn-ccis/blui-code-standards/issues"
     },
-    "homepage": "https://github.com/brightlayer-ui/code-standards/tree/master/eslint-config#readme",
+    "homepage": "https://github.com/etn-ccis/blui-code-standards/tree/master/eslint-config#readme",
     "files": [
         "README.md",
         "LICENSE.md",
