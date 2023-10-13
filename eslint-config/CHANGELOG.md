@@ -4,14 +4,14 @@
 
 ### Changed
 
--   Eased `@typescript-eslint/naming-convention` rules to allow quoted properties ([#55](https://github.com/brightlayer-ui/code-standards/issues/55)).
+-   Eased `@typescript-eslint/naming-convention` rules to allow quoted properties ([#55](https://github.com/etn-ccis/blui-code-standards/issues/55)).
 
 ## v3.0.0 (January 14, 2022)
 
 ### Changed
 
--   Updated all dependencies to latest available versions. (`eslint@8.6.0` `@typescript-eslint/eslint-plugin@5.9.0`, `eslint-plugin-react@7.28.0`) ([#50](https://github.com/brightlayer-ui/code-standards/issues/50)).
--   Removed duplicated `no-shadow` rule and only use the `@typescript-eslint/no-shadow` rule. ([#33](https://github.com/brightlayer-ui/code-standards/issues/33)).
+-   Updated all dependencies to latest available versions. (`eslint@8.6.0` `@typescript-eslint/eslint-plugin@5.9.0`, `eslint-plugin-react@7.28.0`) ([#50](https://github.com/etn-ccis/blui-code-standards/issues/50)).
+-   Removed duplicated `no-shadow` rule and only use the `@typescript-eslint/no-shadow` rule. ([#33](https://github.com/etn-ccis/blui-code-standards/issues/33)).
 
 ## v2.0.5 (October 19, 2021)
 

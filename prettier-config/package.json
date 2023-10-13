@@ -7,12 +7,12 @@
     "license": "BSD-3-Clause",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/brightlayer-ui/code-standards.git"
+        "url": "git+https://github.com/etn-ccis/blui-code-standards.git"
     },
     "bugs": {
-        "url": "https://github.com/brightlayer-ui/code-standards/issues"
+        "url": "https://github.com/etn-ccis/blui-code-standards/issues"
     },
-    "homepage": "https://github.com/brightlayer-ui/code-standards/tree/master/prettier-config#readme",
+    "homepage": "https://github.com/etn-ccis/blui-code-standards/tree/master/prettier-config#readme",
     "peerDependencies": {
         "prettier": ">= 1.0.0"
     },
@@ -38,6 +38,6 @@
     "prettier": "@brightlayer-ui/prettier-config",
     "devDependencies": {
         "@brightlayer-ui/prettier-config": "latest",
-        "prettier": "^2.2.1"
+        "prettier": "^3.0.0"
     }
 }

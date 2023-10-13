@@ -19,7 +19,7 @@ const bluiRules = {
         {
             selector: 'property',
             format: null,
-            modifiers: ['requiresQuotes']
+            modifiers: ['requiresQuotes'],
         },
         {
             selector: 'enumMember',
@@ -110,8 +110,8 @@ const bluiRules = {
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'sort-imports': 'off',
-    "no-shadow": "off",
-    "@typescript-eslint/no-shadow": ["error"]
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
 };
 
 module.exports = bluiRules;
