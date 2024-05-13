@@ -1,6 +1,7 @@
 # Brightlayer UI Code Standards
 [![](https://img.shields.io/npm/v/@brightlayer-ui/eslint-config?label=%40brightlayer-ui%2Feslint-config&style=flat)](https://www.npmjs.com/package/@brightlayer-ui/eslint-config) 
-[![](https://img.shields.io/npm/v/@brightlayer-ui/prettier-config?label=%40brightlayer-ui%2Fprettier-config&style=flat)](https://www.npmjs.com/package/@brightlayer-ui/prettier-config) 
+[![](https://img.shields.io/npm/v/@brightlayer-ui/prettier-config?label=%40brightlayer-ui%2Fprettier-config&style=flat)](https://www.npmjs.com/package/@brightlayer-ui/prettier-config)
+[![Build](https://github.com/etn-ccis/blui-code-standards/actions/workflows/blui-ci.yml/badge.svg?branch=master)](https://github.com/etn-ccis/blui-code-standards/actions/workflows/blui-ci.yml)
 
 This repository contains resources for ensuring consistency and quality across different Brightlayer UI applications and materials.
 
