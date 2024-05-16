@@ -47,6 +47,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://registry.npmjs.org'
       - run: yarn --immutable
+        working-directory: prettier-config
       - run: npm run publish:package -- -b ${{env.BRANCH}}
         working-directory: prettier-config
 
@@ -66,5 +67,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://registry.npmjs.org'
       - run: yarn --immutable
+        working-directory: eslint-config
       - run: npm run publish:package -- -b ${{env.BRANCH}}
         working-directory: eslint-config
