@@ -1,5 +1,13 @@
 # Changelog
 
+## v4.0.0 (unreleased)
+
+### Changed
+
+-   Update to support ESlint version 9.
+-   Removed deprecated no-var-requires rule in favor of no-require-imports rule.
+-   Removed deprecated no-throw-literal rule.
+
 ## v3.0.1 (June 8, 2022)
 
 ### Changed

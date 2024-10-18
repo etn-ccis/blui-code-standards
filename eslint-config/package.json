@@ -1,6 +1,6 @@
 {
     "name": "@brightlayer-ui/eslint-config",
-    "version": "3.0.1",
+    "version": "4.0.0-alpha.0",
     "description": "ESLint profile for Brightlayer UI",
     "author": "Brightlayer UI <brightlayer-ui@eaton.com>",
     "main": "index.js",
@@ -30,16 +30,16 @@
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write"
     },
     "peerDependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.9.0",
-        "eslint": ">= 8.6.0",
-        "typescript": ">= 4.0.0"
+        "@typescript-eslint/eslint-plugin": "^8.10.0",
+        "eslint": ">= 9.12.0",
+        "typescript": "5.5.4"
     },
     "dependencies": {
-        "@typescript-eslint/parser": "^5.9.0",
-        "eslint-config-prettier": ">= 8.0.0"
+        "@typescript-eslint/parser": "^8.10.0",
+        "eslint-config-prettier": ">= 9.1.0"
     },
     "optionalDependencies": {
-        "eslint-plugin-react": "^7.28.0"
+        "eslint-plugin-react": "^7.37.1"
     },
     "keywords": [
         "eslint",
@@ -51,10 +51,10 @@
     "prettier": "@brightlayer-ui/prettier-config",
     "devDependencies": {
         "@brightlayer-ui/prettier-config": "^1.0.3",
-        "@typescript-eslint/eslint-plugin": "^5.9.0",
-        "eslint": ">= 8.6.0",
-        "eslint-plugin-react": "^7.28.0",
+        "@typescript-eslint/eslint-plugin": "^8.10.0",
+        "eslint": ">= 9.12.0",
+        "eslint-plugin-react": "^7.37.1",
         "prettier": "3.2.5",
-        "typescript": ">= 4.0.0"
+        "typescript": "5.5.4"
     }
 }
