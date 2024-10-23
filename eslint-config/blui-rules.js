@@ -57,7 +57,6 @@ const bluiRules = {
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
-    '@typescript-eslint/no-unused-expressions': 'off',
     '@typescript-eslint/prefer-function-type': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'off',
     '@typescript-eslint/prefer-readonly': 'error',
