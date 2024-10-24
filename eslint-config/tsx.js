@@ -1,11 +1,11 @@
-import js from "@eslint/js";
-import reactRecommened from "eslint-plugin-react/configs/recommended.js"
-import tseslint from "typescript-eslint";
-import prettierRecommended from "eslint-plugin-prettier/recommended";
-import typescriptEslintParser from "@typescript-eslint/parser";
-import bluiRules from './blui-rules.js'
+const js = require('@eslint/js');
+const reactRecommened  = require('eslint-plugin-react/configs/recommended.js');
+const tseslint = require('typescript-eslint');
+const prettierRecommended = require('eslint-plugin-prettier/recommended');
+const typescriptEslintParser = require('@typescript-eslint/parser');
+const bluiRules = require('./blui-rules.js');
 
-export default [
+module.exports = [
     js.configs.recommended,
     tseslint.configs.eslintRecommended,
     ...tseslint.configs.recommendedTypeChecked,
