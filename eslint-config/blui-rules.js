@@ -1,4 +1,4 @@
-const bluiRules = {
+export default {
     '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/explicit-function-return-type': 'error',
@@ -6,7 +6,7 @@ const bluiRules = {
         'error',
         {
             selector: 'default',
-            format: ['camelCase'],
+            format: ['camelCase', 'PascalCase'],
         },
         {
             selector: 'variable',
@@ -36,10 +36,13 @@ const bluiRules = {
             format: ['camelCase'],
             leadingUnderscore: 'require',
         },
-
         {
             selector: 'typeLike',
             format: ['PascalCase'],
+        },
+        {
+            selector: 'import',
+            format: ['camelCase', 'PascalCase'],
         },
     ],
     '@typescript-eslint/no-floating-promises': 'error',
@@ -108,8 +111,6 @@ const bluiRules = {
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'sort-imports': 'off',
-    'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': ['error'],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"]
 };
-
-module.exports = bluiRules;
