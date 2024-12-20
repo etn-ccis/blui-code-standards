@@ -1,5 +1,17 @@
 # Changelog
 
+## v4.0.0 (December 19, 2024)
+
+### Changed
+
+-   Update to support ESlint version 9.
+-   Removed deprecated no-var-requires rule in favor of no-require-imports rule.
+-   Removed deprecated no-throw-literal rule.
+
+### Fixed
+
+-   Update naming-convention rules ([#96](https://github.com/etn-ccis/blui-code-standards/issues/96)).
+
 ## v3.0.1 (June 8, 2022)
 
 ### Changed

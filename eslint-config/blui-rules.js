@@ -1,4 +1,4 @@
-const bluiRules = {
+module.exports = {
     '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/explicit-function-return-type': 'error',
@@ -6,7 +6,7 @@ const bluiRules = {
         'error',
         {
             selector: 'default',
-            format: ['camelCase'],
+            format: ['camelCase', 'PascalCase'],
         },
         {
             selector: 'variable',
@@ -36,10 +36,13 @@ const bluiRules = {
             format: ['camelCase'],
             leadingUnderscore: 'require',
         },
-
         {
             selector: 'typeLike',
             format: ['PascalCase'],
+        },
+        {
+            selector: 'import',
+            format: ['camelCase', 'PascalCase'],
         },
     ],
     '@typescript-eslint/no-floating-promises': 'error',
@@ -47,7 +50,6 @@ const bluiRules = {
     '@typescript-eslint/no-array-constructor': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-require-imports': 'off',
-    '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-unnecessary-condition': 'off',
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
@@ -90,7 +92,6 @@ const bluiRules = {
     'no-return-assign': 'error',
     'no-self-compare': 'error',
     'no-sequences': 'error',
-    'no-throw-literal': 'error',
     'no-unused-expressions': 'error',
     'no-useless-call': 'error',
     'no-undef-init': 'error',
@@ -110,8 +111,6 @@ const bluiRules = {
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'sort-imports': 'off',
-    'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': ['error'],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"]
 };
-
-module.exports = bluiRules;
