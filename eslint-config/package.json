@@ -30,7 +30,7 @@
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write"
     },
     "peerDependencies": {
-        "typescript": "5.7.2"
+        "typescript": "5.8.3"
     },
     "dependencies": {
         "@eslint/js": "^9.13.0",
@@ -55,6 +55,6 @@
         "@brightlayer-ui/prettier-config": "^1.0.3",
         "eslint-plugin-react": "^7.37.1",
         "prettier": "3.4.2",
-        "typescript": "5.7.2"
+        "typescript": "5.8.3"
     }
 }
