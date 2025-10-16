@@ -1,6 +1,6 @@
 # Changelog
 
-## v4.0.1 (July 29, 2025)
+## v4.0.1 (October 17, 2025)
 
 ### Changed
 
